@@ -1,0 +1,356 @@
+:root{
+    --normalfont: 'Signika Negative',sans-serif;
+    --iconwidth: 80px;
+    --subtitle-size: 30px; 
+    --title-size: 95px;
+    --info-quest-font-size: 20px;
+    --quest-size: 28px;
+
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(90deg,#FF9A8B,#ff6a88,#ff99ac);
+    font-family: var(--normalfont);
+    
+}
+
+.header{
+    background-color: rgba(8, 8, 8, 0.815); 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: #00000052;
+    position: fixed;
+    top: 0;
+}
+
+.icon{
+    width: var(--iconwidth);
+}
+
+.introduction-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80vh;
+    margin: 110px 60px 60px 60px;
+    background-color: white;
+    
+}
+
+#title{
+    font-size: 7vw;
+    margin-bottom: 0;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+#description{
+    font-size: 3vw;
+    margin: 5px 5px 5px 5px;
+}
+
+#introduction-icon{
+    width: var(--iconwidth);
+    margin: 10px;
+}
+
+
+
+.introduction-card:hover{ 
+    border-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cadetblue;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+
+
+.info-title, #info-description {
+    position: relative;
+    font-family: var(--normalfont);
+    font-size: var(--subtitle-size);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+    bottom: 35px;
+
+}
+
+
+#info-description{
+    font-size: 20px;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 90%;
+    height: 350px;
+    font-size: var(--info-quest-font-size);
+}
+
+.information .quest input {
+    width: 25%;
+    height: 30px;
+    font-size: 16px;
+}
+
+#forms {
+    flex-direction: row;
+}
+
+
+#forms input {
+    position: relative;
+    width: 260px;
+    height: 30px;
+          
+}
+
+#forms label{
+    position: relative;
+    margin-left: 25px
+    
+}
+
+#email, #number  {
+    width: 60%;
+    margin-left: 15px;
+}
+
+#email-label,#number-label {
+    margin-left: 25px;
+}
+
+.quest{
+    margin: 10px 10px 10px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: var(--info-quest-font-size);
+}
+
+.quest input, .quest select {
+    padding-left: 10px;
+    background-color: #ff6a8867;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.267);
+    border-width: 1px;
+    font-size: 16px;
+}
+
+#quest-area .quest label {
+    font-size: 17px;
+}
+
+#quest-area .quest p {
+    margin-left: 25px;
+}
+
+
+#quest-area{
+background-color: white;
+width: 90%;
+display: flex;
+flex-direction: column;
+
+}
+
+
+.message {
+display: inline;
+position: relative;
+color: red;
+margin-left: 4px;
+font-size: 16px;
+right: 2px;
+bottom: 4px;        
+}
+
+
+#quest-area-title{
+    bottom: 0;
+    margin-top: 20px;
+}
+
+#quest-area input{
+    margin-left: 25px;
+    margin-bottom: 15px;
+
+}
+
+.important-message {
+position: relative;
+font-size: 13px;
+color: red;
+bottom: 14px;
+}
+
+
+
+
+.special-button{
+    position: relative;
+    width: 60%;
+    margin-left: 3%;
+    bottom: 24px;
+    resize: none;
+}       
+
+
+.selecter{
+    position: relative;
+    bottom: 20px;
+    font-size: 16px
+}
+
+#color-a5{
+    width: 3rem;
+    padding: 0;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#submit-button{
+    position: absolute;
+    width: 8rem;
+    height: 34px;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #ff6a88; 
+}
+
+#submit-button:hover{
+    color: black;
+    animation-name: sizeq;
+    animation-duration: 0.5s;
+    content: "";
+    animation-fill-mode: forwards;
+}
+
+@keyframes sizeq {
+    0%{
+        color: rgb(0, 0, 0);
+        background-color: black;
+    }
+
+
+    100%{
+        width: 10rem;
+        height: 40px; 
+        background-color: black;
+        color: #ff6a88;
+        border-width: 2px;
+        border-color: #ff6a88;
+    }
+}
+
+footer{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    height: 20vh;
+}
+
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+footer p{
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+#footer-content {
+    display: flex;
+    align-items: center;
+}
+
+/* AÑADIDOS DE ESTILO A LAS PREGUNTAS */
+
+#timesnewromans{font-family: 'Times New Roman', Times, serif;}
+#monospace{font-family: monospace;}
+#helvetica{font-family: Helvetica;}
+#verdana{font-family: Verdana;}
+#arial-narrow{font-family: 'Arial Narrow Bold';}
+
+
+
+@media(max-width: 700px){
+
+    .header{
+        height: 60px;
+    }
+
+    .header img{
+        width:  65px;
+    }
+    
+    .introduction-card{
+        position: relative;
+        width: 90%;
+        height: 350px;
+        top: 100px;
+        margin-bottom: 202px;
+    }
+
+    #description{
+        font-size: auto;
+    }
+
+    #title{
+        font-size: auto;
+    
+    }
+    
+    #introduction-icon{
+        width: 70px;
+    }
+
+    #survey-form{
+        width: 95%;
+        height: auto;
+    }
+
+    .information{
+        display: grid;
+        grid-template-columns: ;
+        width: 95%;
+        height: 450px;
+    }
+
+
+}

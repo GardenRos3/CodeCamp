@@ -5,213 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rose's Form</title>
+    <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
-    <style>
-
-        :root{
-            --normalfont: 'Signika Negative',sans-serif;
-            --iconwidth: 80px;
-            --subtitle-size: 30px; 
-            --title-size: 95px;
-            --info-quest-font-size: 20px;
-            --quest-size: 28px;
-
-        }
-
-        body{
-            margin: 0;
-            background: linear-gradient(90deg,#FF9A8B,#ff6a88,#ff99ac);
-            font-family: var(--normalfont);
-            
-        }
-
-        .header{
-            background-color: rgba(8, 8, 8, 0.815); 
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            border-bottom: solid;
-            border-width: 3px;
-            border-color: #00000052;
-            position: fixed;
-            top: 0;
-        }
-        
-        .icon{
-            width: var(--iconwidth);
-        }
-        
-        .introduction-card{
-            background-color: rgba(0, 0, 0, 0.452);
-            text-align: center;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            font-family: var(--normalfont);
-            color: beige;
-            width: 70%;
-            height: 350px;
-            margin: 117px 15% 5% 15%;
-            border-style: solid;
-            border-color: rgba(0, 0, 0, 0.596);
-            border-radius: 5px;
-            border-width: 10px;
-        }
-
-        #description{
-            font-size: var(--subtitle-size);
-        }
-
-       #title{
-            font-size: var(--title-size);
-            
-       }
-
-       .introduction-card:hover{
-            
-            border-color: rgba(0, 0, 0, 0.733);
-            background-color: rgba(0, 0, 0, 0.781);
-       }
-       
-
-       main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-       }
-
-       #survey-form{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: cadetblue;
-            width: 70%;
-       }
-
-        
-
-       .info-title, #info-description {
-            position: relative;
-            font-family: var(--normalfont);
-            font-size: var(--subtitle-size);
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 8px;
-            bottom: 35px;
-
-       }
-
-
-       #info-description{
-            font-size: 20px;
-       }
-
-       .information{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            background-color: aliceblue;
-            width: 90%;
-            height: 350px;
-            font-size: var(--info-quest-font-size);
-       }
-
-       .information .quest input {
-            width: 25%;
-            height: 30px;
-            font-size: 16px;
-       }
-       
-       #forms {
-            flex-direction: row;
-       }
-
-
-       #forms input {
-            position: relative;
-            width: 260px;
-            height: 30px;
-                  
-       }
-
-       #forms label{
-            position: relative;
-            margin-left: 25px
-            
-       }
-
-       #email, #number  {
-            width: 60%;
-            margin-left: 15px;
-       }
-
-       #email-label,#number-label {
-            margin-left: 25px;
-       }
-
-       .quest{
-            margin: 10px 10px 10px 10px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: var(--info-quest-font-size);
-       }
-
-       .quest input {
-            padding-left: 10px;
-            background-color: #ff6a8867;
-            border-style: solid;
-            border-color: rgba(0, 0, 0, 0.267);
-            border-width: 1px;
-            font-size: 16px;
-       }
-
-       #quest-area .quest label {
-            font-size: 17px;
-       }
-
-       #quest-area .quest p {
-            margin-left: 25px;
-       }
- 
-
-       #quest-area{
-        background-color: white;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-
-       }
-
-
-       .message {
-        display: inline;
-        position: relative;
-        color: red;
-        margin-left: 4px;
-        font-size: 16px;
-        right: 2px;
-        bottom: 4px;        
-       }
-
-
-       #quest-area-title{
-            bottom: 0;
-            margin-top: 20px;
-       }
-
-       #quest-area input{
-            margin-left: 25px;
-            margin-bottom: 15px;
-
-       }
-
-
-       
-
-
-
-    </style>
 </head>
 <body>
     <div class="header">
@@ -221,11 +19,11 @@
         </div>
         <img src="https://cdn-icons-png.flaticon.com/512/7255/7255020.png" alt="espinas" class="icon">
     </div>
-    <main>
+    <main>                                                
         <div class="introduction-card">
             <h1 id="title">¿Do you like my form?</h1>
             <p id="description">Thank you for being here, please rate my form</p>
-            <img src="https://cdn-icons-png.flaticon.com/512/2393/2393332.png" alt="pc" class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/2393/2393332.png" alt="pc" id="introduction-icon" class="icon">
         </div>
 
         <form action="/" id="survey-form">
@@ -277,7 +75,7 @@
 
                 <div class="quest">
                     <p>¿What's your favorite color?<span class="message">*</span></p>
-                    <label for="color-a5" id="quest-color"><p>Your favorite color:</p><input type="color" name="color"  id="color-a5" required>
+                    <label for="color-a5" id="quest-color"><p class="selecter">Your favorite color:</p><input type="color" name="color"  id="color-a5" class="special-button" required>
                     </label>
                 </div>
 
@@ -293,52 +91,52 @@
 
                 <div class="quest">
                     <p>¿Which of this list of fonts do you like visually?</p>
-                    <label for="font-a6" id="timesnewromans">
-                        <input type="checkbox" name="font-type" value="times-news-romans" id="font-a6">Times New Romans</label><br>
+                    <label for="font-a8" id="timesnewromans">
+                        <input type="checkbox" name="font-type" value="times-news-romans" id="font-a8">Times New Romans</label><br>
                     
-                    <label for="font-a7" id="monospace">
-                    <input type="checkbox" name="font-type" value="monospace" id="font-a7">Monospace</label><br>
-                    <label for="font-a8" id="helvetica">
-                        <input type="checkbox" name="font-type" value="helvetica" id="font-a8">Helvetica
+                    <label for="font-a9" id="monospace">
+                    <input type="checkbox" name="font-type" value="monospace" id="font-a9">Monospace</label><br>
+                    <label for="font-a10" id="helvetica">
+                        <input type="checkbox" name="font-type" value="helvetica" id="font-a10">Helvetica
                     </label><br>
-                    <label for="font-a9" id="verdana">
-                        <input type="checkbox" name="font-type" value="verdana" id="font-a9">Verdana
+                    <label for="font-a11" id="verdana">
+                        <input type="checkbox" name="font-type" value="verdana" id="font-a11">Verdana
                     </label><br>
-                    <label for="font-a10" id="arial-narrow">
-                        <input type="checkbox" name="font-type" value="arial-narrow" id="font-a10">Arial Narrow
+                    <label for="font-a12" id="arial-narrow">
+                        <input type="checkbox" name="font-type" value="arial-narrow" id="font-a12">Arial Narrow
                     </label><br>
-                    <label for="font-a11" id="font-none">
-                        <input type="checkbox" name="font-type" value="none" id="font-a11">None
+                    <label for="font-a13" id="font-none">
+                        <input type="checkbox" name="font-type" value="none" id="font-a14">None
                     </label><br>
                 </div>
                 
                 <div class="quest">
                     <p>¿Do you consider the spacing between each question is appropiate?<span class="message">*</span></p>
-                    <label for="space-a12">
-                        <input type="radio" name="space-quest" value="good" id="space-a12" required>Yes, It's very accurate
+                    <label for="space-a15">
+                        <input type="radio" name="space-quest" value="good" id="space-a16" required>Yes, It's very accurate
                     </label><br>
-                    <label for="space-a13">
-                        <input type="radio" name="space-quest" value="too-space" id="space-a13">No, There's too much space
+                    <label for="space-a17">
+                        <input type="radio" name="space-quest" value="too-space" id="space-a17">No, There's too much space
                     </label><br>
-                    <label for="space-a14">
-                        <input type="radio" name="space-quest" value="so close" id="space-a14">No, There's too much space
+                    <label for="space-a18">
+                        <input type="radio" name="space-quest" value="so close" id="space-a18">No, There's too much space
                     </label>
                 </div>
 
                 <div class="quest">
                     <p>Did you understand all the questions on the form?<span class="message">*</span></p>
-                    <label for="undestood-a15">
-                        <input type="radio" value="Yes" name="understood" id="understood-a15" required>Yes
+                    <label for="undestood-a19">
+                        <input type="radio" value="Yes" name="understood" id="understood-a19" required>Yes
                     </label>
-                    <label for="understood-a16">
-                        <input type="radio" name="understood" value="No" id="understood-a16">No
+                    <label for="understood-a20">
+                        <input type="radio" name="understood" value="No" id="understood-a20" />No
                     </label>
                 </div>
 
                 <div class="quest">
-                    <p>¿Which quest wasn't understood?</p><p id="important-message">If you answered "no" to the previous question, you can leave this question blank.</p>
-                    <label for="dropdown">Select a quest:
-                        <select name="no-understood" id="dropdown">
+                    <p>¿Which quest wasn't understood?</p><p class="important-message">If you answered <b>"no"</b> to the previous question, you can leave this question blank.</p>
+                    <label for="dropdown"><p class="selecter">Select a quest:</p>
+                        <select name="no-understood" id="dropdown" class="special-button">
                             <option value="all-understood"></option>
                             <option value="like">¿Do you like my form?</option>
                             <option value="color-mix">¿Do you like the color mix?</option>
@@ -351,20 +149,25 @@
                     </label>
                 </div>
                 <div class="quest">
-                    <p>Comments, any opinion or suggestions?</p><span class="message">all feedback is good to keep learning </span><br>
-                    <label for="opinion-a18">
-                        <textarea name="comments" id="opinion-a18" cols="50" rows="6"></textarea>
+                    <p>Comments, any opinion or suggestions?</p><p class="important-message">all feedback is good to keep learning </p><br>
+                    <label for="opinion-a21">
+                        <textarea name="comments" id="opinion-a21" class="special-button" cols="50" rows="6"></textarea>
                     </label>
                 </div>
 
-                <button name="submit" type="submit" id="submit-button">Submit</button>
+                <div id="button">
+                    <button name="submit" type="submit" id="submit-button">Submit</button>
+                </div>
+               
             </div>  
         </form>
     </main>
-
-    <hr><br>
+    <br>
     <footer>
-        <p>Created by Rose</p><img src="https://cdn-icons-png.flaticon.com/512/765/765848.png" alt="logo">
+        <div id="footer-content">
+            <p>Created by Rose</p><img src="https://cdn-icons-png.flaticon.com/512/765/765848.png" alt="logo">
+        </div>
+        
         
     </footer>
 </body>
